@@ -1,19 +1,21 @@
 {
-  "name": "dinero_veloz",
+  "name": "i_land_sound",
   "version": "1.0.0",
   "description": "",
   "main": "gruntfile.js",
   "dependencies": {
-    "bootstrap": "git+https://github.com/twbs/bootstrap.git",
-    "futura-font": "^1.0.0",
+    "bootstrap": "^4.0.0-beta.3",
     "grunt": "^1.0.1",
+    "jquery": "^3.2.1",
+    "save": "^2.3.2",
+    "select2": "git+https://github.com/select2/select2.git"
+  },
+  "devDependencies": {
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "jquery": "^3.2.1"
+    "grunt-contrib-watch": "^1.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

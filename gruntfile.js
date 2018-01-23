@@ -41,17 +41,24 @@ module.exports = function(grunt) {
 			    src: 'bootstrap.css',
 			    dest: 'app/css',
 			  },
+			  select: {
+			  	expand: true,
+			    cwd: 'node_modules/select2/dist/css/',
+			    src: 'select2.css',
+			    dest: 'app/css',
+			  },
+
 			  img: {
 			    expand: true,
 			    cwd: 'src/img/',
-			    src: ['**'],
+			    src: ['**'], 
 			    dest: 'app/img/',
 			  },
 
 			  font: {
 			  	expand: true,
-			    cwd: 'node_modules/futura-font/',
-			    src: '*.ttf',
+			    cwd: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/',
+			    src: '**',
 			    dest: 'app/fonts/',
 			  }
 
@@ -62,7 +69,8 @@ module.exports = function(grunt) {
 			},
 			dist: {
 			src:	[ 'node_modules/jquery/dist/jquery.js',
-					  'node_modules/bootstrap/dist/js/bootstrap.js',
+					  'node_modules/bootstrap/dist/js/bootstrap.js', 
+					  'node_modules/select2/dist/js/select2.js',
 					  'src/js/main.js'],
 
 				dest: 'app/js/build.js'
